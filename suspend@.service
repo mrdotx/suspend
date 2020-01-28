@@ -1,9 +1,9 @@
 [Unit]
-Description=User suspend actions
+Description=lock x session using i3_knockout for user %i
 Before=sleep.target
 
 [Service]
-User=%I
+User=%i
 Type=forking
 Environment=DISPLAY=:0
 ExecStart=/home/klassiker/projects/i3/i3_knockout.sh -lock simple
