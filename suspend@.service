@@ -8,7 +8,7 @@ Type=forking
 Environment=DISPLAY=:0
 # for xauthority file in system environment
 Environment=XAUTHORITY=/run/lightdm/%i/xauthority
-ExecStart=/home/klassiker/projects/i3/i3_knockout.sh -lock simple
+ExecStart=/home/klassiker/repos/i3/i3_knockout.sh -lock simple
 
 [Install]
 WantedBy=sleep.target
