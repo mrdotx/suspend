@@ -4,7 +4,7 @@ service to lock the screen before sleep
 
 ## installation
 
-- copy file suspend@.service to /etc/systemd/system
+- cp suspend@.service /etc/systemd/system/suspend@.service
 
 ## enable service
 
