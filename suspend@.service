@@ -1,7 +1,7 @@
 # path:   /home/klassiker/.local/share/repos/suspend/suspend@.service
 # author: klassiker [mrdotx]
 # github: https://github.com/mrdotx/suspend
-# date:   2022-05-24T21:09:32+0200
+# date:   2022-05-26T17:43:52+0200
 
 [Unit]
 Description=lock x session using i3_exit for user %i
@@ -13,8 +13,8 @@ Type=forking
 Environment=DISPLAY=:0
 # for changed xauthority file environment
 Environment=XAUTHORITY=/home/%i/.local/share/xorg/Xauthority
-# workaround (sleep -> https://github.com/i3/i3/issues/3298)
-ExecStartPre=sleep .5
+# workaround (sleep -> system wake up too fast)
+ExecStartPre=sleep .05
 ExecStart=/home/%i/.local/share/repos/i3/i3_exit.sh --lock
 
 [Install]
