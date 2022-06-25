@@ -13,3 +13,7 @@ service to lock the screen before sleep
 ## check after reboot
 
 - systemctl status suspend@[username]
+
+# related projects
+
+- [i3](https://github.com/mrdotx/i3)
